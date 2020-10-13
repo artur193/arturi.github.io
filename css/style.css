@@ -1,0 +1,150 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Anton', sans-serif;
+	font-size: 16px; 
+	box-sizing: border-box;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+}
+
+ul, li {
+	display: block;
+}
+
+a {
+	color: #fff;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.header {
+	background: url('../img/header-bg.jpg') no-repeat center top / cover;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto; 
+}
+
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 57px;
+}
+
+.header__top a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.header__wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	width: 28px;
+	height: 48px;
+	margin-right: 69px;
+}	
+
+.header__logo img {
+	width: 100%;
+}
+
+.nav__list {
+	display: flex;
+	text-transform: uppercase;
+}
+
+.nav__list a {
+	font-size: 14px;
+	margin-right: 40px;
+	letter-spacing: 0.1em;
+}
+
+.header__phone a {
+	font-size: 17px;
+	letter-spacing: 0.1em;
+}
+
+.header__main {
+	color: #fff;
+	padding-top: 216px;
+	padding-bottom: 422px;
+}
+
+.header__subtitle {
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 0.1em;
+	margin-bottom: -8px;
+}
+
+.header__title {
+	font-size: 100px;
+	letter-spacing: 0.04em;
+	margin-bottom: 19px;
+	height: 147px;
+}
+
+.header__btn {
+	display: block;
+	text-align: center;
+	padding: 17px;
+	font-size: 17px;
+	letter-spacing: 0.1em;
+	border: 1px solid #fff;
+	width: 238px;
+}
+
+.header__btn:hover {
+	background: #fff;
+    color: #000;
+}
+
+h2 {
+	font-size: 50px;
+	margin-top: 113px;
+	margin-bottom: 58px;
+}
+
+h3 {
+	font-size: 25px;
+	height: 49px;
+	margin-bottom: 19px;
+}
+
+.about__description {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about__description p {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 26px;
+	text-align: justify;
+	width: 564px;
+}
+
+.about__gallery {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 114px;
+}
+
+.footer__copyright {
+	display: flex;
+}
+
+.footer__copyright p {
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	margin-right: 55px;
+	height: 49px;
+	margin-bottom: 80px;
+	margin-top: 67px;
+}
