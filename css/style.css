@@ -25,7 +25,7 @@ a {
 }
 
 .container {
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto; 
 }
 
@@ -52,7 +52,7 @@ a {
 }	
 
 .header__logo img {
-	width: 100%;
+	max-width: 100%;
 }
 
 .nav__list {
@@ -88,7 +88,6 @@ a {
 	font-size: 100px;
 	letter-spacing: 0.04em;
 	margin-bottom: 19px;
-	height: 147px;
 }
 
 .header__btn {
@@ -98,7 +97,7 @@ a {
 	font-size: 17px;
 	letter-spacing: 0.1em;
 	border: 1px solid #fff;
-	width: 238px;
+	max-width: 238px;
 }
 
 .header__btn:hover {
@@ -120,20 +119,30 @@ h3 {
 
 .about__description {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.about__column {
+	flex: 0 1 50%;
 }
 
 .about__description p {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 26px;
 	text-align: justify;
-	width: 564px;
+	
+	margin-bottom: 37px;
+	margin-right: 36px;	
 }
 
 .about__gallery {
 	display: flex;
-	justify-content: space-between;
-	margin-bottom: 114px;
+	flex-wrap: wrap;
+}
+
+.about__gallery img{
+	max-width: 100%;
+	margin: 30px 5px 0px 0px;
 }
 
 .footer__copyright {
@@ -146,5 +155,44 @@ h3 {
 	margin-right: 55px;
 	height: 49px;
 	margin-bottom: 80px;
-	margin-top: 67px;
+	margin-top: 114px;
+}
+
+@media screen and (max-width: 800px) { 
+	.about__column {
+		flex: 0 0 100%;
+		margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 1180px) {
+	.container {
+		padding-left: 10px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.nav__list a {
+	margin-right: 10px;
+}
+	.header__logo {
+	margin-right: 10px;
+}	
+}
+
+@media screen and (max-width: 355px) {
+	.header__subtitle {
+	font-size: 25px;
+	}
+
+	.header__title {
+	font-size: 80px;
+	}
+}
+
+@media screen and (max-width: 559px) {
+	.about__gallery img{
+	width: 100%;
+}
 }
